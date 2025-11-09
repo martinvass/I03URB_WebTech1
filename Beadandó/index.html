@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foci Portál - Kezdőlap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .video-container {
+            border: 2px solid #333;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        .stat-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .highlight-section {
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #C8102E;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #video-controls button {
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #C8102E;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #video-controls button:hover {
+            background-color: #a60e24;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Foci Portál</h1>
+        <p>Minden, ami a labdarúgás!</p>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Kezdőlap</a></li>
+            <li><a href="hirek.html">Hírek</a></li>
+            <li><a href="csapatok.html">Csapatok</a></li>
+            <li><a href="galeria.html">Galéria</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="main-content">
+            <article>
+                <h2>Üdvözlünk a Foci Portálon!</h2>
+                <p>Tudj meg hasznos információkat a foci világáról, különösen a Liverpool csapatáról!</p>
+
+                <div class="highlight-section">
+                    <h3>"You'll Never Walk Alone"</h3>
+                    <p>A legendás Liverpool mottó, amit minden szurkoló szívében hordoz.</p>
+                </div>
+
+                <h3 style="color: #C8102E; border-bottom: 1px solid #C8102E;">Kiemelt Videó</h3>
+                <div class="video-container">
+                    <video id="fociVideo" width="100%">
+                        <source src="video/foci.mp4" type="video/mp4">
+                        A böngésződ nem támogatja a videó lejátszást.
+                    </video>
+                    <div id="video-controls">
+                        <button id="playBtn">Lejátszás</button>
+                        <button id="pauseBtn">Megállítás</button>
+                        <button id="skipBtn">+10 mp</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <aside id="sidebar">
+            <h3>Szurkolói Sarok</h3>
+            <p>A Liverpool szurkolók a világ minden tájáról összegyűlnek, hogy támogassák csapatukat. A Kop szektor atmoszférája egyedülálló.</p>
+            <img src="img/stadion.jpg" alt="Anfield Stadion" style="width:100%; margin-top:10px;">
+
+            <h3 style="margin-top: 1.5rem;">Liverpool Információk</h3>
+            <div class="stat-card"><strong>Alapítva:</strong> 1892</div>
+            <div class="stat-card"><strong>Stadion:</strong> Anfield (61 000 férőhely)</div>
+            <div class="stat-card"><strong>Legutóbbi trófea:</strong> FA Kupa 2022</div>
+            <div class="stat-card"><strong>Vezetőedző:</strong> Arne Slot</div>
+        </aside>
+    </div>
+
+    <footer id="main-footer">
+        <p>Készítette: Vass Martin I03URB - 2025</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

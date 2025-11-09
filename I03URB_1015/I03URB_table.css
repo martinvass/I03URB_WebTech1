@@ -1,0 +1,53 @@
+  table {
+    margin: 50px auto;
+    border-collapse: collapse;
+    text-align: center;
+    width: 350px;
+    height: 200px;
+    font-weight: bold;
+  }
+
+  #lm{
+    text-align: left;
+    vertical-align: middle;
+  }
+  #cb{
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  #rt{
+    text-align: right;
+    vertical-align: top;
+  }
+
+  .row0{
+    background-color: rgb(145, 144, 144);
+    height: 50px;
+  }
+
+  .row1 {
+    background-color: red;
+    height: 80px;
+  }
+
+  .row2 {
+    background-color: rgb(255, 255, 125);
+    height: 120px;
+  }
+
+  .row3{
+    background-color: rgb(255, 255, 125);
+    height: 100px;
+  }
+  .row3d2{
+    background-color: yellow;
+  }
+
+  .scroll {
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+    text-align: left;
+    font-weight: bold;
+  }

@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#main-header {
+    background: #C8102E;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-nav {
+    background: #333;
+    color: #fff;
+}
+
+#main-content {
+    float: left;
+    width: 70%;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    clear: both;
+}
+
+article, section, aside, nav, header, footer {
+    display: block;
+}
+
+/* Menü kialakítása */
+#main-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#main-nav li {
+    display: inline-block;
+}
+
+/* Linkek formázása */
+#main-nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+#main-nav a:hover,
+#main-nav a.active {
+    background-color: #555;
+}
+
+a {
+    color: #004d00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Táblázat formázása */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.styled-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Űrlap elemek formázása */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea,
+input[list] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Gombok formázása */
+button,
+input[type="submit"],
+input[type="reset"] {
+    background-color: #C8102E;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #f2153a;
+}
+
+button[type="reset"] {
+    background-color: #888;
+}
+
+button[type="reset"]:hover {
+    background-color: #aaa;
+}
+
+input.error,
+textarea.error {
+    border: 2px solid red;
+    background-color: #ffeeee;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.gallery-item {
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+}
+
+.team-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    margin-top: 0;
+}

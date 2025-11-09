@@ -1,0 +1,115 @@
+{
+  "bajnoksag": "Európai TOP csapatok",
+  "csapatok": [
+    {
+      "id": 1,
+      "nev": "Real Madrid C.F.",
+      "varos": "Madrid, Spanyolország",
+      "alapitva": 1902,
+      "jatekosok": [
+        "Jude Bellingham",
+        "Vinícius Júnior",
+        "Kylian Mbappé"
+      ]
+    },
+    {
+      "id": 2,
+      "nev": "Manchester United F.C.",
+      "varos": "Manchester, Anglia",
+      "alapitva": 1878,
+      "jatekosok": [
+        "Bruno Fernandes",
+        "Marcus Rashford",
+        "Lisandro Martínez"
+      ]
+    },
+    {
+      "id": 3,
+      "nev": "FC Bayern München",
+      "varos": "München, Németország",
+      "alapitva": 1900,
+      "jatekosok": [
+        "Harry Kane",
+        "Jamal Musiala",
+        "Manuel Neuer"
+      ]
+    },
+    {
+      "id": 4,
+      "nev": "Paris Saint-Germain F.C.",
+      "varos": "Párizs, Franciaország",
+      "alapitva": 1970,
+      "jatekosok": [
+        "Ousmane Dembélé",
+        "Achraf Hakimi",
+        "Gianluigi Donnarumma"
+      ]
+    },
+    {
+      "id": 5,
+      "nev": "FC Barcelona",
+      "varos": "Barcelona, Spanyolország",
+      "alapitva": 1899,
+      "jatekosok": [
+        "Robert Lewandowski",
+        "Pedri",
+        "João Félix"
+      ]
+    },
+    {
+      "id": 6,
+      "nev": "Liverpool F.C.",
+      "varos": "Liverpool, Anglia",
+      "alapitva": 1892,
+      "jatekosok": [
+        "Mohamed Salah",
+        "Virgil van Dijk",
+        "Dominik Szoboszlai"
+      ]
+    },
+    {
+      "id": 7,
+      "nev": "Juventus F.C.",
+      "varos": "Torino, Olaszország",
+      "alapitva": 1897,
+      "jatekosok": [
+        "Dušan Vlahović",
+        "Federico Chiesa",
+        "Wojciech Szczęsny"
+      ]
+    },
+    {
+      "id": 8,
+      "nev": "Arsenal F.C.",
+      "varos": "London, Anglia",
+      "alapitva": 1886,
+      "jatekosok": [
+        "Bukayo Saka",
+        "Martin Ødegaard",
+        "Gabriel Jesus"
+      ]
+    },
+    {
+      "id": 9,
+      "nev": "AC Milan",
+      "varos": "Milánó, Olaszország",
+      "alapitva": 1899,
+      "jatekosok": [
+        "Rafael Leão",
+        "Olivier Giroud",
+        "Theo Hernández"
+      ]
+    },
+    {
+      "id": 10,
+      "nev": "Manchester City F.C.",
+      "varos": "Manchester, Anglia",
+      "alapitva": 1880,
+      "jatekosok": [
+        "Erling Haaland",
+        "Kevin De Bruyne",
+        "Phil Foden"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox elrendezes</title>
+
+    <style>
+    #flex-container{
+        border: 3px solid black;
+        background-color: rgb(209, 100, 191);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 70px;
+    }
+
+    #flex-container > div {
+        border: 1px solid black;
+        width: 10%;
+        aspect-ratio: 2;
+        padding: 10px;
+        background-color: yellow;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>A gap tulajdonság flexbox segítségével</h1>
+
+    <p>A gap tulajdonsággal adható meg a sorok és oszlopok közötti távolság egy flexbox elrendezésben.</p>
+    <p>A flexbox elrendezésnél a sorok között 20 px, az oszlopok között pedig 70 px a távolság.</p>
+
+    <div id="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+    </div>
+
+</body>
+</html>

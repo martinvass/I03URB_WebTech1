@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csapatok - Foci Portál</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Foci Portál</h1>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="hirek.html">Hírek</a></li>
+            <li><a href="csapatok.html" class="active">Csapatok</a></li>
+            <li><a href="galeria.html">Galéria</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="main-content">
+            <article>
+                <h2>Top Csapatok</h2>
+                <p>Az alábbi adatok a <code>data/csapatok.json</code> fájlból töltődnek be AJAX segítségével.</p>
+                
+                <button id="load-teams-btn">Csapatok betöltése</button>
+                
+                <div id="teams-container"></div>
+                
+            </article>
+        </section>
+    </div>
+
+    <footer id="main-footer">
+        <p>Készítette: Vass Martin I03URB - 2025</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
