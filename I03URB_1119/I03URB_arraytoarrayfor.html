@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Tömbökön belüli tömbök ciklusa</h1>
+
+<div id="jsonI03URB"></div>
+<script>
+const TPObj = {
+    "name": "Vass Martin",
+    "age": 22,
+    "cars": [
+        {"name":"Toyota", "models":["CHR", "Corolla", "Proace"]},
+        {"name":"Ford", "models":["Kuga", "Mondeo", "Mustang"]},
+        {"name":"BMW", "models":["320", "X3", "X5"]},
+        {"name":"Fiat", "models":["500", "Panda", "Tipo"] }]}    
+
+    const jsonI03URB = document.getElementById('jsonI03URB');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = "Autók és modelljeik";
+    jsonI03URB.appendChild(h2)
+
+    for(let i=0; i < TPObj.cars.length; i++) {
+        const p = document.createElement('p');
+        p.innerHTML = `<strong>${TPObj.cars[i].name}</strong>`;
+        jsonI03URB.appendChild(p);
+
+        const ul = document.createElement('ul');
+
+        for(let j=0; j < TPObj.cars[i].models.length; j++){
+            const li = document.createElement('li');
+            li.textContent = TPObj.cars[i].models[j];
+            ul.appendChild(li);
+        }
+
+        jsonI03URB.appendChild(ul);
+    }
+
+</script>
+
+</body>
+</html>

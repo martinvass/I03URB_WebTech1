@@ -1,0 +1,34 @@
+<!DOCTYPE html> <html lang="hu"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>JSON fájl készítése - JavaScript-ben</title> 
+</head>
+<body>
+    <h3>JSON fájl feldolgozás, beolvasás - JavaScript-ben</h3>
+
+    <strong>JSON:</strong>
+    <p id="I03URB"></p>
+
+    <button onclick="olvasas()">JSON beolvasás</button>
+
+<script>
+    function olvasas() {
+        const JSONdata = '[{"nev":"HTML5","kiterjesztes":".html"},{"nev":"CSS3","kiterjesztes":".css"},{"nev":"JavaScript","kiterjesztes":".js"}]'
+
+        const obj = JSON.parse(JSONdata);
+
+        let i=0;
+        let szovegKiir="";
+
+        while(i < 3) {
+            szovegKiir += "Név: " + obj[i].nev + ", kiterjesztés: " + obj[i].kiterjesztes + "<br>";
+            i++; 
+        }
+
+        document.getElementById("I03URB").innerHTML = szovegKiir;
+
+    }
+</script>
+
+</body> 
+</html>

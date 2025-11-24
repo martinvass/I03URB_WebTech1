@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+
+    <style>
+        .grid {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 1rem;
+            width: 40rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        footer {
+            border-top: 4px solid gray;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            width: 37.5rem;
+            text-align: right;
+        }
+
+        div.grid>div{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        button {
+            width: 2.5rem;
+            height: 2.5rem;
+            line-height: 4;
+            overflow: hidden;
+        
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #bdf;
+            box-shadow: 0 0 0 0.125rem #000000bb, inset 0 0 0.25rem 0 #ffffffbb; 
+        }
+
+        button:hover {
+            background-color: #9cf;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+    <header>
+        <h1>Video lejátszása_I03URB</h1>
+    </header>
+
+    <section>
+        <video src="I03URB_video.mp4" id="video" controls width="600"></video>
+      </section>
+      
+        <div class="controls">
+          <div class="row">
+            <button id="start"><span class="material-symbols-outlined">play_arrow</span></button>
+            <button id="stop"><span class="material-symbols-outlined">stop</span></button>
+            <button id="startstop"><span class="material-symbols-outlined">play_pause</span></button>
+          </div>
+          <div class="row">
+            <button id="mute"><span class="material-symbols-outlined">volume_off</span></button>
+            <button id="volLow"><span class="material-symbols-outlined">volume_down</span></button>
+            <button id="volHigh"><span class="material-symbols-outlined">volume_up</span></button>
+            <button id="rateVerySlow"><span class="material-symbols-outlined">slow_motion_video</span></button>
+            <button id="rateSlow"><span class="material-symbols-outlined">fast_rewind</span></button>
+            <button id="rateNormal"><span class="material-symbols-outlined">play_arrow</span></button>
+            <button id="rateFast"><span class="material-symbols-outlined">fast_forward</span></button>
+            <button id="rateVeryFast"><span class="material-symbols-outlined">double_arrow</span></button>
+          </div>
+          <div class="row">
+            <button id="sizeSmall"><span class="material-symbols-outlined">photo_size_select_small</span></button>
+            <button id="sizeNormal"><span class="material-symbols-outlined">photo_size_select_large</span></button>
+            <button id="sizeLarge"><span class="material-symbols-outlined">image</span></button>
+            <button id="isEnded"><span class="material-symbols-outlined">check</span></button>
+            <button id="getDuration"><span class="material-symbols-outlined">timer</span></button>
+            <button id="getCurrent"><span class="material-symbols-outlined">schedule</span></button>
+          </div>
+        </div>
+
+    <footer>
+        Forrás: <a href="https://www.w3schools.com/html/html5_video.asp">https://www.w3schools.com/html/html5_video.asp</a>
+    </footer>
+
+    <script>
+        const btnClick = (id, onclick) => {
+          const el = document.getElementById(id);
+          if (el) el.addEventListener("click", onclick);
+        };
+      
+        const video = document.getElementById("video");
+      
+        btnClick("start", () => video.play());
+        btnClick("stop", () => {
+          video.pause();
+          try { video.currentTime = 0; } catch {}
+        });
+        btnClick("startstop", () => (video.paused ? video.play() : video.pause()));
+      
+        btnClick("mute", () => { video.muted = true; });
+        btnClick("volLow", () => { video.muted = false; video.volume = 0.2; });
+        btnClick("volHigh", () => { video.muted = false; video.volume = 1.0; });
+      
+        btnClick("rateVerySlow", () => video.playbackRate = 0.25);
+        btnClick("rateSlow", () => video.playbackRate = 0.5);
+        btnClick("rateNormal", () => video.playbackRate = 1.0);
+        btnClick("rateFast", () => video.playbackRate = 1.5);
+        btnClick("rateVeryFast", () => video.playbackRate = 2.0);
+      
+        btnClick("sizeSmall", () => { video.width = 200; });
+        btnClick("sizeNormal", () => { video.width = 400; });
+        btnClick("sizeLarge", () => { video.width = 700; });
+      
+        const seconds = (n) => (Number.isFinite(n) ? n.toFixed(2) : "ismeretlen");
+        let metadataLoaded = false;
+        video.addEventListener("loadedmetadata", () => { metadataLoaded = true; });
+      
+        btnClick("isEnded", () => {
+          alert(`A videó befejeződött: ${video.ended ? "igen" : "nem"}`);
+        });
+        btnClick("getDuration", () => {
+          const d = metadataLoaded ? video.duration : NaN;
+          alert(`Video hossza: ${seconds(d)} mp`);
+        });
+        btnClick("getCurrent", () => {
+          alert(`Jelenlegi pozíció: ${seconds(video.currentTime)} mp`);
+        });
+      </script>
+</body>
+</html>
